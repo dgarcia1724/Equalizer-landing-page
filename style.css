@@ -1,0 +1,465 @@
+:root {
+  --cyan: #66e2dc;
+  --orange: #fa7453;
+  --gold: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+  --googleFont: "IBM Plex Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--googleFont);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/****** Backgrounds  *******/
+.bgMainMobile {
+  position: absolute;
+  top: -20rem;
+  right: -20rem;
+}
+.bgMainTablet {
+  display: none;
+}
+.bgMainDesktop {
+  display: none;
+}
+
+/* bg design pattern */
+.bg-pattern-1 {
+  display: none;
+}
+
+.topSection {
+  padding: 4rem 2.4rem;
+}
+
+.logo {
+  margin-bottom: 6.4rem;
+
+  width: 14.6rem;
+}
+
+.heroText > h1 {
+  margin-bottom: 2rem;
+
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 48px;
+
+  color: var(--black);
+}
+
+.heroText > p {
+  margin-bottom: 16.6rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 26px;
+
+  color: var(--black);
+}
+
+.middle {
+  padding: 0 2.4rem;
+  width: 100%;
+
+  background-color: var(--black);
+
+  position: relative;
+}
+
+.illustrationApp {
+  position: absolute;
+  top: -9.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: 20.9rem;
+}
+
+.bg-pattern-2 {
+  display: block;
+  margin: 0 auto;
+
+  max-width: 30rem;
+}
+
+/******** Orange Section ********/
+.orange {
+  position: absolute;
+  top: 90%;
+  left: 0;
+
+  width: 100%;
+  padding: 4.8rem 3.6rem;
+  border-radius: 12px;
+
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.orange > h1 {
+  margin-bottom: 1.2rem;
+
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 40px;
+}
+
+.orange > p {
+  margin-bottom: 3.6rem;
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 28px;
+}
+
+.paddingLeft {
+  padding-left: 0.6rem;
+}
+
+.price {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.price > h2 {
+  font-weight: 700;
+  font-size: 6.5rem;
+  line-height: 5.2rem;
+}
+
+.price > span {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+/******* BUTTONS  *********/
+
+.btn {
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btnOne {
+  margin-bottom: 1.6rem;
+
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btnTwo {
+  background-color: var(--white);
+}
+
+.btnOne:hover {
+  background-color: var(--cyan);
+}
+
+.btnTwo:hover {
+  background-color: var(--gold);
+}
+
+/******** Footer ********/
+footer {
+  margin-top: 51rem;
+
+  padding: 6.4rem 2.4rem 8rem;
+}
+
+.logo2 {
+  margin-bottom: 3.2rem;
+
+  width: 14.6rem;
+}
+
+.leftFooter > p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.leftFooter > span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.icons {
+  margin-top: 6.4rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+/******** TABLET  ********/
+@media (min-width: 750px) {
+  /****** Backgrounds  *******/
+  .bgMainMobile {
+    display: none;
+  }
+  .bgMainTablet {
+    position: absolute;
+    top: -25rem;
+    right: -10rem;
+
+    display: block;
+  }
+  .bgMainDesktop {
+    display: none;
+  }
+
+  /* bg design pattern */
+  .bg-pattern-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 26.7rem;
+
+    display: block;
+  }
+
+  .topSection {
+    padding: 6.2rem 3.9rem;
+  }
+
+  .logo {
+    margin-bottom: 9.5rem;
+  }
+
+  .heroText {
+    width: 52rem;
+  }
+
+  .heroText > h1 {
+    margin-bottom: 2.8rem;
+
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 64px;
+  }
+
+  .heroText > p {
+    margin-bottom: 24.9rem;
+
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  .middleContainer {
+    padding: 0 3.9rem;
+  }
+
+  .middle {
+    padding: 0 18.7rem;
+    border-radius: 12px;
+  }
+
+  .illustrationApp {
+    position: absolute;
+    top: -13.8rem;
+    left: 6.4rem;
+    transform: none;
+
+    width: 27rem;
+  }
+
+  .bg-pattern-2 {
+    padding-bottom: 11.5rem;
+
+    max-width: 40rem;
+  }
+
+  /******** Orange Section ********/
+  .orange {
+    top: 15rem;
+    left: 24rem;
+
+    width: 40rem;
+    padding: 4.8rem;
+  }
+
+  /******** Footer ********/
+  footer {
+    margin-top: 9rem;
+
+    padding: 8.7rem 3.3rem 8.5rem;
+  }
+
+  .icons {
+    margin-top: 0;
+  }
+
+  .footerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/******** DESKTOP  ********/
+@media (min-width: 1400px) {
+  /****** Backgrounds  *******/
+  .bgMainTablet {
+    display: none;
+  }
+  .bgMainDesktop {
+    position: absolute;
+    top: -25rem;
+    right: -10rem;
+
+    display: block;
+  }
+
+  /* bg design pattern */
+  .bg-pattern-1 {
+    width: 31.2rem;
+  }
+
+  .topSection {
+    padding: 6.2rem 16.5rem;
+  }
+
+  .logo {
+    margin-bottom: 12.7rem;
+  }
+
+  .heroText > h1 {
+    margin-bottom: 4rem;
+
+    font-weight: 700;
+    font-size: 8.8rem;
+    line-height: 88px;
+
+    width: 101.5rem;
+  }
+
+  .heroText > p {
+    margin-bottom: 32.1rem;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 34px;
+  }
+
+  .middleContainer {
+    padding: 0 16.5rem;
+  }
+
+  .middle {
+    padding: 0 46.2rem 17.2rem 33.6rem;
+  }
+
+  .illustrationApp {
+    position: absolute;
+    top: -21.3rem;
+    left: 10.2rem;
+
+    width: 31.2rem;
+  }
+
+  .bg-pattern-2 {
+    padding-bottom: 0rem;
+
+    max-width: 60rem;
+  }
+
+  /******** Orange Section ********/
+  .orange {
+    top: 9rem;
+    left: 56.9rem;
+
+    width: 44.6rem;
+    padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  }
+
+  .orange > h1 {
+    margin-bottom: 2.2rem;
+
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 52px;
+  }
+
+  .orange > p {
+    margin-bottom: 3.9rem;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 34px;
+  }
+
+  .paddingLeft {
+    padding-left: 0;
+  }
+
+  .price {
+    margin-bottom: 4.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .price > h2 {
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+  }
+
+  .price > span {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  /******** Footer ********/
+  footer {
+    margin-top: 0rem;
+
+    padding: 20.2rem 16.5rem 9.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 32rem;
+  }
+}
